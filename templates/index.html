@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tfidf</title>
+</head>
+<body>
+  <h1>Enter a sentence to query:</h1>
+  <form action="/query" method="post">
+      <input type="text" name="user_input">
+      <input type="submit" value="Submit">
+  </form>
+  {% if rows %}
+  <div class="results">
+      <h2>Query Results</h2>
+      {% for doc_id, score in rows %}
+          <div class="result-item">
+              {{ doc_id }} - {{ score }}
+          </div>
+      {% endfor %}
+  </div>
+{% elif message %}
+  <p>{{ message }}</p>
+{% endif %}
+</body>
+</html>
