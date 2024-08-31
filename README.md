@@ -1,6 +1,6 @@
 # TF-IDF-Search-Engine
 
-Developed a TF-IDF-based search engine as part of an academic lab project. The system, hosted on AWS EC2, processes textual data to compute relevance scores and efficiently retrieves documents based on user queries.
+Developed a TF-IDF-based search engine. The system, hosted on AWS EC2, processes textual data to compute relevance scores and efficiently retrieves documents based on user queries.
 
 ## Technologies Used
 Python, Flask, Amazon DynamoDB, Amazon EC2
